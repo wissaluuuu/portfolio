@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9e2bff18.css",
+    "main.js": "/portfolio/static/js/main.e49f56d5.js",
+    "static/media/kk-removebg.png": "/portfolio/static/media/kk-removebg.e908d5feb3fc1f34533a.png",
+    "static/media/vv.png": "/portfolio/static/media/vv.3e44ff3f57cb2327a9ed.png",
+    "static/media/pants.png": "/portfolio/static/media/pants.56c0f5ff7979b792c8a2.png",
+    "static/media/category2.png": "/portfolio/static/media/category2.8b08322ca66639fb7f5b.png",
+    "static/media/category.png": "/portfolio/static/media/category.9d1b5ab1456ce1fb063e.png",
+    "static/media/sac.png": "/portfolio/static/media/sac.abbaa3522c59a10be64b.png",
+    "static/media/sweats.png": "/portfolio/static/media/sweats.757616c7c22bd57d6fd6.png",
+    "static/media/casquette.png": "/portfolio/static/media/casquette.e5d200423fe03714580a.png",
+    "static/media/Womsh_Logo___SVG___Alphabet__Letter_W_Logo-removebg-preview.png": "/portfolio/static/media/Womsh_Logo___SVG___Alphabet__Letter_W_Logo-removebg-preview.d43810beeed91fd30f89.png",
+    "static/media/category1.png": "/portfolio/static/media/category1.38bd110ef17f879e9092.png",
+    "index.html": "/portfolio/index.html",
+    "main.9e2bff18.css.map": "/portfolio/static/css/main.9e2bff18.css.map",
+    "main.e49f56d5.js.map": "/portfolio/static/js/main.e49f56d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e2bff18.css",
+    "static/js/main.e49f56d5.js"
+  ]
+}
