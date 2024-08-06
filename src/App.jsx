@@ -4,21 +4,20 @@ import { HomePage } from "./pages/Home/Home";
 import Header from "./layouts/Header";
 import { useState } from "react";
 import { MyProvider } from "./utils/contextProvider";
-import { ContactPage } from "./pages/market/market";
+import { ContactPage } from "./pages/contact/Contact";
+import { WorkPage } from "./pages/Work/Work";
+// import { ContactPage } from "./pages/market/market";
 
 function App() {
   const [myname,setmyname] = useState('wissall')
   return (
     <>
     <MyProvider>
-
       <Routes>
-
-        <Route path="/portfolio" element={<HomePage/>} />
+        <Route path="/" element={<HomePage/>} />
         <Route path="/about" element={<AboutPage  />} />
-        <Route path="/market" element={<ContactPage  />} />
-
-
+        <Route path="/contact" element={<ContactPage  />} />
+        <Route path="/work" element={<WorkPage  />} />
       </Routes>
     </MyProvider>
     </>

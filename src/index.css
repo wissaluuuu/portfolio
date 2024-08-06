@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+}
+
+/* @keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
+    
+} */
