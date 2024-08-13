@@ -7,46 +7,60 @@ import { Link, useParams } from "react-router-dom"
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-
+import { FaArrowTurnDown } from "react-icons/fa6";
 import pic from "../../assets/img/vv.png";
 import logo from "../../assets/img/Womsh_Logo___SVG___Alphabet__Letter_W_Logo-removebg-preview.png";
 export const WorkPage = () => {
     return (
-        <>
+        <div >
 
-<div>
+            <div className="bg-[#e4e2dd] shadow-2xl h-fit  text-black">
+                <div className="  w-full items-center py-16">
+                    <div className="px-8">
+                        <div className=" border border-black overflow-hidden"><h1 className="text-[8vw] animate-scrollX  whitespace-nowrap"> 🔥WISSALUU🏄‍♀️WISSALUU🔥WISSALUU🔥</h1> </div>
+                    </div>
+                    <div className="flex items-center px-3  pt-4 ">
+                        <div className="border-b-[1px] border-black  flex items-center w-full p-4">
 
-<div className="bg-[#e4e2dd] overflow-hidden h-screen min-h-[98vh] w-full flex justify-between items-center pt-3 relative ">
-    <div className="flex flex-col   h-screen justify-between">
-        <div>
-        <Link  to={'/'}>
-            <img src={logo} className="w-[90px]  " alt="" />
-            </Link>
-        </div>
-        <div className=" px-9 font-serif mt-3  text-2xl  h-[60%]  font-extrabold">
-            <FaGithub className="mt-3" />
-            <FaInstagram className="mt-3" />
-            <FaLinkedin className="mt-3" />
-        </div>
-    </div>
+                            <FaArrowTurnDown className="text-[5vw]" />
+                            <h1 className="text-[7vw] w-[80%] "  >Projects </h1>
+                        </div>
+                    </div>
+                    
+                    <div className="flex gap-11 py-4 px-8">
+                        <div className=" w-[20%] flex flex-col gap-5"> <h4 className="text-gray-500">TIMERFRAME</h4> <h5>YEAR 2023-24</h5></div>
+                        <div className=" w-[15%] flex flex-col gap-4"> <h4 className="text-gray-500">LANGUAGES</h4><div className="flex flex-col">
+                            <h5>Javasript</h5>
+                            <h5>HTML</h5>
+                            <h5>CSS</h5>
+                            <h5>SASS</h5>
+                        </div></div>
+                        <div className=" w-[15%] flex flex-col gap-4"> <h4 className="text-gray-500">Frameworks</h4> <div className="flex flex-col">
+                            <h5>ReactJs</h5>
+                            <h5>Laravel</h5>
+                            <h5>NodeJs</h5>
+                            <h5>MysQl</h5>
+                            <h5>Tailwind</h5>
+                        </div></div>
+                        <div className=" w-[15%] flex flex-col gap-4"> <h4 className="text-gray-500" >TOOLS</h4> <div className="flex flex-col">
+                            <h5>Git/Github</h5>
+                            <h5>Figma</h5>
+                            <h5>Postman</h5>
+                        </div></div>
+                        <div className=" w-[35%] flex flex-col gap-4"> <h4 className="text-gray-500">INDUSTRY</h4> <div className=" flex flex-wrap gap-4"> <button className=" border-black border-2 rounded-md px-3">#TECH</button><button  className=" border-black border-2 rounded-md px-3">#CRYPTO</button><button  className=" border-black border-2 rounded-md px-3">#AI</button><button  className=" border-black border-2 rounded-md px-3">#TECH</button> <button  className=" border-black border-2 rounded-md px-3">#TECH</button> <button  className=" border-black border-2 rounded-md px-3">#TECH</button></div></div>
+                    </div>
+                </div>
+<div className="flex flex-col gap-7  py-5 px-8">
 
-    <div className=" h-[85%]">
-        
-        <div className="text-9xl fw-bold font-extrabold font-serif relative z-10">
-            <div className="scroll-container relative top-52 left-8 ml-6">
-                <span className="scroll-text">hello work</span>
+                <div className="flex justify-around items-center border-black border-b border-t py-4 ">
+                    <h1>GIS</h1>
+                    <h4 className="w-[30%] text-center"> Laravel , tailwind , SASS, Bootstrap , MySQl</h4>
+                    <h5 className="w-[30%] text-center text-gray-500">GENERAL INTELLIGENCE SERVICES</h5>
+                </div>
+</div>
             </div>
+
+
         </div>
-    </div>
-    <div className=" px-2 py-2 font-serif mt-3  text-xl  h-screen  font-extrabold  flex flex-col justify-around ">
-        <p className="transform rotate-90"> <Link className="no-underline text-black " to={'/about'}> About</Link></p>
-        <p className="transform rotate-90">  <Link className="no-underline text-black"> Work</Link></p>
-        <p className="transform rotate-90">  <Link className="no-underline text-black" to={'/contact'}> Contact</Link></p>
-    </div>
-</div>
-</div>
-        
-            
-        </>
     )
 }
