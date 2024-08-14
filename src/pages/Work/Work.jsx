@@ -2,15 +2,26 @@
 
 import { HeroSection } from "./Components/section1"
 
-import React from "react"
+import React, { useState } from "react"
 import { Link, useParams } from "react-router-dom"
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowTurnDown } from "react-icons/fa6";
 import pic from "../../assets/img/vv.png";
+import pic2 from "../../assets/img/gisservice.png";
+
 import logo from "../../assets/img/Womsh_Logo___SVG___Alphabet__Letter_W_Logo-removebg-preview.png";
+import { FaCircle } from "react-icons/fa";
 export const WorkPage = () => {
+    const [hoveredProject, setHoveredProject] = useState(null);
+    const projects = [
+        { name: "GIS", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "GENERAL INTELLIGENCE SERVICES", img: pic2 },
+        { name: "Lionsgeek", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "GENERAL INTELLIGENCE SERVICES", img: pic },
+        { name: "Casatourat", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "GENERAL INTELLIGENCE SERVICES", img: pic },
+        { name: "Wissu", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "Task management", img: pic },
+        { name: "ecomm", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "GENERAL INTELLIGENCE SERVICES", img: pic }
+    ];
     return (
         <div >
 
@@ -26,38 +37,70 @@ export const WorkPage = () => {
                             <h1 className="text-[7vw] w-[80%] "  >Projects </h1>
                         </div>
                     </div>
-                    
+
                     <div className="flex gap-11 py-4 px-8">
-                        <div className=" w-[20%] flex flex-col gap-5"> <h4 className="text-gray-500">TIMERFRAME</h4> <h5>YEAR 2023-24</h5></div>
-                        <div className=" w-[15%] flex flex-col gap-4"> <h4 className="text-gray-500">LANGUAGES</h4><div className="flex flex-col">
-                            <h5>Javasript</h5>
-                            <h5>HTML</h5>
-                            <h5>CSS</h5>
-                            <h5>SASS</h5>
+                        <div className=" w-[10%] flex flex-col gap-5"> <h6 className="text-gray-500">TIMERFRAME</h6> <h6>YEAR 2023-24</h6></div>
+                        <div className=" w-[10%] flex flex-col gap-4"> <h6 className="text-gray-500">Technologies</h6>
+                            <div className="flex gap-3 ">
+
+                                <div className="flex flex-col">
+                                    <h6>Javasript</h6>
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>SASS</h6>
+                                </div>
+                                {/* <div className="flex flex-col">
+                                    <h6>ReactJs</h6>
+                                    <h6>Laravel</h6>
+                                    <h6>NodeJs</h6>
+                                    <h6>MysQl</h6>
+                                    <h6>Tailwind</h6>
+                                </div> */}
+                            </div>
+                        </div>
+                        <div className=" w-[10%] flex flex-col gap-4"> <h6 className="text-gray-500">Frameworks</h6> <div className="flex flex-col">
+                            <h6>ReactJs</h6>
+                            <h6>Laravel</h6>
+                            <h6>NodeJs</h6>
+                            <h6>MysQl</h6>
+                            <h6>Tailwind</h6>
                         </div></div>
-                        <div className=" w-[15%] flex flex-col gap-4"> <h4 className="text-gray-500">Frameworks</h4> <div className="flex flex-col">
-                            <h5>ReactJs</h5>
-                            <h5>Laravel</h5>
-                            <h5>NodeJs</h5>
-                            <h5>MysQl</h5>
-                            <h5>Tailwind</h5>
+                        <div className=" w-[10%] flex flex-col gap-4"> <h6 className="text-gray-500" >TOOLS</h6> <div className="flex flex-col">
+                            <h6>Git/Github</h6>
+                            <h6>Figma</h6>
+                            <h6>Postman</h6>
                         </div></div>
-                        <div className=" w-[15%] flex flex-col gap-4"> <h4 className="text-gray-500" >TOOLS</h4> <div className="flex flex-col">
-                            <h5>Git/Github</h5>
-                            <h5>Figma</h5>
-                            <h5>Postman</h5>
-                        </div></div>
-                        <div className=" w-[35%] flex flex-col gap-4"> <h4 className="text-gray-500">INDUSTRY</h4> <div className=" flex flex-wrap gap-4"> <button className=" border-black border-2 rounded-md px-3">#TECH</button><button  className=" border-black border-2 rounded-md px-3">#CRYPTO</button><button  className=" border-black border-2 rounded-md px-3">#AI</button><button  className=" border-black border-2 rounded-md px-3">#TECH</button> <button  className=" border-black border-2 rounded-md px-3">#TECH</button> <button  className=" border-black border-2 rounded-md px-3">#TECH</button></div></div>
+                        <div className=" w-[35%] flex flex-col gap-4"> <h6 className="text-gray-500">INDUSTRY</h6> <div className=" flex flex-wrap gap-4"> <button className=" border-black border-2 rounded-md px-3">#TECH</button><button className=" border-black border-2 rounded-md px-3">#CRYPTO</button><button className=" border-black border-2 rounded-md px-3">#AI</button><button className=" border-black border-2 rounded-md px-3">#TECH</button> <button className=" border-black border-2 rounded-md px-3">#TECH</button> <button className=" border-black border-2 rounded-md px-3">#TECH</button></div></div>
                     </div>
                 </div>
-<div className="flex flex-col gap-7  py-5 px-8">
-
-                <div className="flex justify-around items-center border-black border-b border-t py-4 ">
-                    <h1>GIS</h1>
-                    <h4 className="w-[30%] text-center"> Laravel , tailwind , SASS, Bootstrap , MySQl</h4>
-                    <h5 className="w-[30%] text-center text-gray-500">GENERAL INTELLIGENCE SERVICES</h5>
+                
+{/* projects */}
+                <div className="flex flex-col gap-[8vh] py-5 px-20">
+                    {projects.map((project, index) => (
+                        <div
+                            key={index}
+                            className="flex justify-between items-center hover:bg-[#d2cfca] border-black border-b border-t py-4 relative"
+                            onMouseEnter={() => setHoveredProject(project)}
+                            onMouseLeave={() => setHoveredProject(null)}
+                        >
+                            <div className="flex w-[20%] items-center gap-2">
+                                <FaCircle />
+                                <h2>{project.name}</h2>
+                            </div>
+                            <h4 className="w-[33%] text-center">{project.tools}</h4>
+                            <h5 className="w-[33%] text-center text-gray-500">{project.description}</h5>
+                            {hoveredProject === project && (
+                            <img
+                                src={pic2}
+                                alt={`${project.name} image`}
+                                className="absolute top-[-50%] left-0 w-[100%] h-[100%] object-cover z-10"
+                            />
+                        )}
+                            {/* <img src={pic2}  alt="" /> */}
+                        </div>
+                    ))}
                 </div>
-</div>
+
             </div>
 
 

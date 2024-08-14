@@ -5,16 +5,17 @@ import { FaLinkedin } from "react-icons/fa";
 import pic from "../../../assets/img/kk-removebg.png";
 import logo from "../../../assets/img/Womsh_Logo___SVG___Alphabet__Letter_W_Logo-removebg-preview.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export const HeroSection = () => {
-
+    
 
     return (
         <div>
             <div className="bg-[#e4e2dd] overflow-hidden h-screen min-h-[98vh] w-full flex justify-between items-center pt-3 relative ">
                 <div className="flex flex-col   h-screen justify-between">
                     <div>
-                        <img src={logo} className="w-[90px]  " alt="" />
+                        <img src={logo}  className="w-[90px]  " alt="" />
                     </div>
                     <div className=" px-9 font-serif mt-3  text-2xl  h-[60%]  font-extrabold">
                         <a href="https://github.com/wissaluuuu" target="_blank" rel="noopener noreferrer">
@@ -36,9 +37,9 @@ export const HeroSection = () => {
                     </div>
                 </div>
                 <div className=" px-2 py-2 font-serif mt-3  text-xl  h-screen  font-extrabold  flex flex-col justify-around ">
-                    <p className="transform rotate-90"> <Link className="no-underline text-black " to={'/about'}> About</Link></p>
-                    <p className="transform rotate-90">  <Link className="no-underline text-black" to={'/work'}> Work</Link></p>
-                    <p className="transform rotate-90">  <Link className="no-underline text-black" to={'/contact'}> Contact</Link></p>
+                    <p className="transform rotate-90">   About</p>
+                    <p className="transform rotate-90">    Work</p>
+                    <p className="transform rotate-90">   Contact</p>
                 </div>
             </div>
             
