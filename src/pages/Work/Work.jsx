@@ -17,9 +17,9 @@ export const WorkPage = () => {
     const [hoveredProject, setHoveredProject] = useState(null);
     const projects = [
         { name: "GIS", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "GENERAL INTELLIGENCE SERVICES", img: pic2 },
-        { name: "Lionsgeek", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "GENERAL INTELLIGENCE SERVICES", img: pic },
-        { name: "Casatourat", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "GENERAL INTELLIGENCE SERVICES", img: pic },
-        { name: "Wissu", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "Task management", img: pic },
+        { name: "Lionsgeek", tools: "ReactJs, Tailwind, SASS, Bootstrap, MySQL , API", description: "lionsgeek ", img: pic },
+        { name: "Casatourat", tools: "React Native, Laravel , API, Tailwind, SASS, Bootstrap, MySQL", description: "GENERAL INTELLIGENCE SERVICES", img: pic },
+        { name: "Wissu", tools: "Laravel, Tailwind , JSAP , Bootstrap, MySQL", description: "Task management", img: pic },
         { name: "ecomm", tools: "Laravel, Tailwind, SASS, Bootstrap, MySQL", description: "GENERAL INTELLIGENCE SERVICES", img: pic }
     ];
     return (
